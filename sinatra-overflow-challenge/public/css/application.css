@@ -1,0 +1,329 @@
+/*--------------------------
+  Resets
+  -------------------------*/
+
+input[type=text],
+input[type=submit] {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+   appearance:        none;
+   border:            none;
+}
+
+* {
+  border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+}
+
+/*--------------------------
+  Body, HTML
+  -------------------------*/
+.body,
+.html {
+  height: 100%;
+}
+
+/*--------------------------
+  intro - main
+  -------------------------*/
+
+.main {
+  position: relative;
+}
+
+.intro {
+  padding-bottom: 100px;
+}
+
+.title-span {
+  color: #3EA0D0;
+}
+
+.title {
+  font-size: 1.250em;
+  display: inline-block;
+}
+
+.log-in {
+  text-align: right;
+  display: inline-block;
+  float: right;
+  margin-top: 15px;
+}
+
+.main--header {
+  margin-top: 163px;
+  font-size: 80px;
+}
+
+.intro-container {
+  display: inline-block;
+}
+
+/*--------------------------
+  Home Page - Form
+  -------------------------*/
+.form-row {
+  background-color: #3EA0D0;
+  width: 100vw;
+}
+.register-form {
+  color: white;
+  padding-bottom: 50px;
+}
+
+.form-main-wrapper {
+  position: relative;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+input[type=text],
+.form-main-wrapper > input[type=submit] {
+  width: 70%;
+}
+
+.form-main-wrapper > input[type=submit] {
+  background:none;
+  border: 1px solid white;
+}
+
+input[type=text] {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.register-form a {
+  color: white;
+}
+
+.join-intro {
+  font-size: 20px;
+  margin-top: 100px;
+}
+
+.privacy {
+  width: 70%;
+}
+
+/*--------------------------
+  Home Page - Comments
+  -------------------------*/
+
+.top-questions {
+  margin-bottom: 3.625rem;
+}
+
+.row-comments {
+  background-color: #fafafa;
+  padding-bottom: 90px;
+}
+
+.comments-container {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+article > h4 {
+  font-size: 1.500em;
+  font-weight: normal;
+}
+
+.ratings {
+  display: inline-block;
+  margin-right: 100px;
+}
+
+.more-posts {
+  margin-top: 5em;
+  background-color: #3EA0D0;
+  border: none;
+  color: white;
+}
+
+/*--------------------------
+  Questions - Main
+  -------------------------*/
+
+.question-container,
+.answer-container {
+  /*border: 1px solid orange;*/
+  overflow: auto;
+}
+
+.question,
+.answer {
+  /*border: 1px solid red;*/
+  width: 90%;
+  float: right;
+}
+
+.post-container {
+  margin-top: 90px;
+  padding-bottom: 180px;
+}
+
+.question-votes
+.answer-votes {
+  float: left;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.main-container {
+  /*border: 1px solid pink;*/
+  display: inline-block;
+  float: left;
+  margin-left: 40px;
+  width: 80%;
+}
+
+.question-title {
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+.comments-posts {
+  color: #939393;
+}
+
+.add-comment {
+  color: #3EA0D0;
+}
+
+/*--------------------------
+  Answers - Main
+  -------------------------*/
+
+.answer-title {
+  font-weight: normal;
+}
+
+/*--------------------------
+  Answer Form
+  -------------------------*/
+
+.form-title {
+  /*font-size: 20px;*/
+  /*margin-bottom: 40px;*/
+}
+
+.answer-form > [type="submit"] {
+  background:none;
+  border: 1px solid black;
+}
+
+.answer-form {
+  clear: both;
+}
+
+/*--------------------------
+  Footer
+  -------------------------*/
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 90px;
+}
+
+.footer--group-one {
+  float: right;
+  padding-right: 24px;
+}
+
+.footer--copyright {
+  float: left;
+  /*padding-left: 24px;*/
+}
+
+/*--------------------------
+  Footer
+  -------------------------*/
+
+#overlay{ /* we set all of the properties for are overlay */
+    height:80%;
+    width:80%;
+    margin:0 auto;
+    background:white;
+    color:black;
+    padding:10px;
+    position:absolute;
+    top:5%;
+    left:10%;
+    z-index:1000;
+    display:none;
+    /* CSS 3 */
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -o-border-radius:10px;
+    border-radius:10px;
+}
+
+#mask{ /* create are mask */
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.6);
+    z-index:500;
+    width:100%;
+    height:100%;
+    display:none;
+}
+/* use :target to look for a link to the overlay then we find are mask */
+#overlay:target, #overlay:target + #mask{
+    display:block;
+    opacity:1;
+}
+.close{ /* to make a nice looking pure CSS3 close button */
+    display:block;
+    position:absolute;
+    top:-20px;
+    right:-20px;
+    background:red;
+    color:white;
+    height:40px;
+    width:40px;
+    line-height:40px;
+    font-size:35px;
+    text-decoration:none;
+    text-align:center;
+    font-weight:bold;
+    -webkit-border-radius:40px;
+    -moz-border-radius:40px;
+    -o-border-radius:40px;
+    border-radius:40px;
+}
+#open-overlay{ /* open the overlay */
+    text-align: right;
+    float: right;
+    display:inline-block;
+    margin-top: 15px;
+}
+
+.log-in-form {
+  /*border: 1px solid blue;*/
+  overflow: auto;
+}
+
+.login-password--form,
+.login-username--form,
+.login-submit--form {
+  /*border: 1px solid pink;*/
+  /*background-color: red;*/
+  width: 20%;
+}
+
+.login-username--form,
+.login-password--form {
+  float: left;
+}
+
+.login-submit--form {
+  float: right;
+}
+
+
+

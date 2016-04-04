@@ -1,0 +1,22 @@
+<h1>Contacts</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Full Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Actions</th>
+  </thead>
+  <tbody>
+    <% @contacts.each do |contact| %>
+      <tr>
+        <td><%= contact.id %></td>
+        <td><%= contact.full_name %><</td>
+        <td><%= contact.email %><</td>
+        <td><%= contact.phone %><</td>
+      </tr>
+      <% end %>
+  </tbody>
+</table>
+<a href="/contacts/new" title="Add Contact">Add Contact</a>
